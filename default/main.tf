@@ -10,7 +10,7 @@ provider "aws" {
   region = "eu-central-1"
   default_tags {
     tags = {
-      environment = "test"
+      environment = "test123"
       managed_by  = "terraform"
       checkov_uid = "CKV_AWS_358"
     }
