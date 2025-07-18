@@ -1,3 +1,4 @@
+
 name: Cortex CLI Code Scan
 
 on:
@@ -47,3 +48,4 @@ jobs:
           --branch ${{github.ref_name}} \
           --source 'GITHUB_ACTIONS' \
           --create-repo-if-missing
+
