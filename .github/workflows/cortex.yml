@@ -1,3 +1,4 @@
+
 name: Cortex CLI Code Scan
 
 on:
@@ -32,8 +33,8 @@ jobs:
 
     - name: Pull Docker Image
       run: |
-        docker pull distributions.traps.paloaltonetworks.com/cli-docker/${{env.TEMP_TOKEN}}/method:amd64-${{env.CORTEX_CLI_VERSION}}
-        docker tag distributions.traps.paloaltonetworks.com/cli-docker/${{env.TEMP_TOKEN}}/method:amd64-${{env.CORTEX_CLI_VERSION}} cortexcli:${{env.CORTEX_CLI_VERSION}}
+        docker pull distributions.traps.paloaltonetworks.com/cli-docker/${{env.TEMP_TOKEN}}/method:arm64-${{env.CORTEX_CLI_VERSION}}
+        docker tag distributions.traps.paloaltonetworks.com/cli-docker/${{env.TEMP_TOKEN}}/method:arm64-${{env.CORTEX_CLI_VERSION}} cortexcli:${{env.CORTEX_CLI_VERSION}}
 
     - name: Run Docker Container
       run: |
@@ -47,4 +48,3 @@ jobs:
           --branch ${{github.ref_name}} \
           --source 'GITHUB_ACTIONS' \
           --create-repo-if-missing
-
