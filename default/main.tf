@@ -24,9 +24,9 @@ EOF
     git_file             = "terraform/aws/ec2.tf"
     git_last_modified_at = "2020-06-16 14:46:24"
     git_last_modified_by = "nimrodkor@gmail.com"
-    git_modifiers        = "nimrodkor"
+    git_modifiers        = "mannytest"
     git_org              = "bridgecrewio"
-    git_repo             = "terragoat"
+    git_repo             = "cortexcloud"
     yor_trace            = "347af3cd-4f70-4632-aca3-4d5e30ffc0b6"
   })
 }
