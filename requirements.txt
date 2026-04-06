@@ -1,0 +1,3 @@
+Flask==2.3.3
+Flash-CORS==4.00
+requests==2.31.0
