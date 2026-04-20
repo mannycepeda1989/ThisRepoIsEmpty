@@ -10,7 +10,7 @@ SharedFields:
   Value: "-/media/F5E77FD8179340ACB9B29B495E9FE93B.ashx?h=16&thn=1&w=16"
 - ID: "22eac599-f13b-4607-a89d-c091763a467d"
   Hint: Width
-  Value: 24
+  Value: 25
 - ID: "40e50ed9-ba07-4702-992e-a912738d32dc"
   Hint: Blob
   BlobID: "74da1dba-24fb-4d7f-a643-a4fe6e6f7989"
