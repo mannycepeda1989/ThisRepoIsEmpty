@@ -3,7 +3,7 @@ String notice = "";
 Hashtable<String,String> dataHash = new Hashtable<String,String>();
 String agentId = ((String) request.getParameter("agentId")).toUpperCase().trim();
 OsjSupervisorServer server = new OsjSupervisorServer();
-if (agentId.length() != 5) {
+if (agentId.length() != 6) {
 return supervisorError(
 getPageName(),
 "Invalid solution number entered. Solution numbers must be 5 characters long");
