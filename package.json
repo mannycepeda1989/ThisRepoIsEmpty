@@ -1,0 +1,13 @@
+{
+"name": "vulnerable-dependency-demo",
+"version": "1.0.0",
+"description": "A sample Node.js project containing known exploitable vulnerabilities for testing scanners.",
+"main": "index.js",
+"scripts": {
+"test": "echo "Error: no test specified" && exit 1"
+},
+"dependencies": {
+"vm2": "3.9.14",
+"lodash": "4.17.15"
+}
+}
