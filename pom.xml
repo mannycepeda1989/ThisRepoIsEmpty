@@ -1,0 +1,33 @@
+<groupId>com.example.security</groupId>
+<artifactId>vulnerable-dependency-demo</artifactId>
+<version>1.0-SNAPSHOT</version>
+
+<name>Exploitable Dependency Demo</name>
+<description>A sample Maven project containing a known exploited vulnerability for testing scanners.</description>
+
+<properties>
+    <maven.compiler.source>11</maven.compiler.source>
+    <maven.compiler.target>11</maven.compiler.target>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+</properties>
+
+<dependencies>
+    <!-- 
+        VULNERABLE DEPENDENCY: Apache Log4j2
+        CVE: CVE-2021-44228 (Log4Shell)
+        CVSS Score: 10.0 (Critical)
+        Status: Actively exploited in the wild (On CISA KEV List)
+        Description: Unauthenticated Remote Code Execution (RCE)
+    -->
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-core</artifactId>
+        <version>2.14.1</version>
+    </dependency>
+    
+    <dependency>
+        <groupId>org.apache.logging.log4j</groupId>
+        <artifactId>log4j-api</artifactId>
+        <version>2.14.1</version>
+    </dependency>
+</dependencies>
